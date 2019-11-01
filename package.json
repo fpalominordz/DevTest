@@ -1,0 +1,43 @@
+{
+  "name": "devtest",
+  "version": "1.0.0",
+  "description": "Dev f test proyect",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "apollo-server": "^2.9.7",
+    "apollo-server-express": "^2.9.7",
+    "bcrypt": "^3.0.6",
+    "cloudinary": "^1.16.0",
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "dotenv": "^8.2.0",
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "development": "nodemon --exec babel-node --watch src ./src/index.development",
+    "start": "node ./build/index.js",
+    "clear": "rm -rf build && mkdir build",
+    "build-server": "babel -d ./build ./src -s",
+    "build": "npm run clear && npm run build-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpalominordz/DevTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fpalominordz/DevTest/issues"
+  },
+  "homepage": "https://github.com/fpalominordz/DevTest#readme"
+}
